@@ -42,13 +42,11 @@ export default function App() {
   return (
     <ScrollView>
     <View style={Styles.onoff}>
-      <Text>On/Off</Text>
       <Switch
         value={isOn}
         onValueChange= {newValue => setIsOn(newValue)}
-        thumbColor='white'
-        trackColor={{false: 'white', true: 'red'}} 
-        />
+        backgroundColor="red" trackColor={{ true: 'blue', false: 'red' }} />
+       
       </View>
     <View style={Styles.container}>
       <Text style={Styles.header}>Alcometer</Text>
