@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
-export default StyleSheet.create({
+
+const Styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'stretch',
@@ -10,6 +11,15 @@ export default StyleSheet.create({
         backgroundColor: ''
       
     },
+    container: {
+        flex: 1,
+        alignItems: 'stretch',
+        justifyContent: 'space-evenly',
+        margin: 10,
+        padding: 10,
+        backgroundColor: ''
+    },
+    
     textInput:{
         padding: 5,
         borderWidth:1,
@@ -48,4 +58,16 @@ export default StyleSheet.create({
         padding: 10
     }
 });
+const SpecialStyles = StyleSheet.create ({
+    container: {
+        flex: 1,
+        alignItems: 'stretch',
+        justifyContent: 'space-evenly',
+        margin: 10,
+        padding: 10,
+        backgroundColor: 'black'
+    },
+
+});
+export {Styles, SpecialStyles};
   
