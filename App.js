@@ -22,6 +22,7 @@ export default function App() {
 
   function calculate() {
 
+    const time = hours * 1
     const litres = bottles * 0.33;
     const burning = weight / 10;
     const grams = litres * 8 * 4.5
@@ -32,6 +33,9 @@ export default function App() {
       alcohol = left / (weight * 0.7);
     } else {
       alcohol = left / (weight * 0.6);
+    }
+    if(weight === 0) {
+      alert("Set weight!");
     }
     if(alcohol < 0 ) {
       setResult(0);
@@ -47,7 +51,6 @@ export default function App() {
       <Switch
         value={isOn}
         onValueChange= {newValue => setIsOn(newValue)}
-       
         />
       </View>
     <View style={Styles.container}>
@@ -56,8 +59,8 @@ export default function App() {
       <TextInput 
         keyboardType='number-pad' 
         value={weight}
+        onChangeText={v => setWeight(parseInt(v))}
         style={Styles.textInput}
-        onChange={v => setWeight(v)}
       />
       <Text style={Styles.label}>Bottles</Text>
         <NumericInput 
@@ -67,23 +70,23 @@ export default function App() {
 
       <Text style={Styles.label}>Hours</Text>
         <NumericInput 
-        value={hours} 
+        value={hours}
         minValue={0} 
-        onChange={e => setHours(e)}/>
+        onChange={(e) => {setHours(e)}}/>
 
       <RadioButton.Group value={gender} onValueChange={newValue => setGender(newValue)}>
       <View style={Styles.radiostyle}>
-        <RadioButton value='Female'/>
+        <RadioButton value='female'/>
         <Text>Female</Text>
       </View>
       <View style={Styles.radiostyle}>
-        <RadioButton value='Male'/>
+        <RadioButton value='male'/>
         <Text>Male</Text>
       </View>
       </RadioButton.Group>
 
-      <Button style={Styles.button} title='Calculate' onClick={calculate}></Button>
-      <Text>{result}</Text>
+      <Button style={Styles.button} title='Calculate' onPress={calculate}></Button>
+      <Text>{result.toFixed(2)}</Text>
     </View>
     </ScrollView>
   );
