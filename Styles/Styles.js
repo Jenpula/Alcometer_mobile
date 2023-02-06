@@ -1,73 +1,71 @@
 import { StyleSheet } from "react-native";
 
 
-const Styles = StyleSheet.create({
+export default StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'stretch',
         justifyContent: 'space-evenly',
         margin: 10,
         padding: 10,
-        backgroundColor: ''
-      
-    },
-    container: {
-        flex: 1,
-        alignItems: 'stretch',
-        justifyContent: 'space-evenly',
-        margin: 10,
-        padding: 10,
-        backgroundColor: ''
+          
     },
     
-    textInput:{
+    textInput: {
         padding: 5,
         borderWidth:1,
         marginBottom: 10,
+        backgroundColor: 'white'
        
     },
-    label:{
+
+    label: {
         fontSize: 18,
         fontWeight: "bold",
         padding: 10,
-       
+        alignSelf: 'center',
        
     },
+    nInput: {
+        textAlign: 'center',
+        alignSelf: 'center'
+    },
+   
     result:{
-        color: '#b00000',
+        color: '#2d2d2d',
         fontSize: 18,
-        fontWeight: "bold"
+        fontWeight: "bold",
+        alignSelf: 'center',
+        padding: 10
     },
     header: {
         fontSize: 35,
        padding: 40,
-       margin: 20
+       margin: 20,
+       alignSelf: 'center'
     },
-    onoff: {
-
-        margin: 20,
-        padding: 15
-    },
+  
     radiostyle: {
-
-        padding: 5
+        padding: 5,
+        alignSelf: 'center',
         
     },
     button: {
         color: 'white',
+        backgroundColor: 'white',
         padding: 10
-    }
-});
-const SpecialStyles = StyleSheet.create ({
-    container: {
-        flex: 1,
-        alignItems: 'stretch',
-        justifyContent: 'space-evenly',
-        margin: 10,
-        padding: 10,
-        backgroundColor: 'black'
     },
 
+    darkColor: {
+        backgroundColor: '#afb4b4',
+    
+    },
+
+    lightColor: {
+        backgroundColor: 'white'
+    }
+ 
 });
-export {Styles, SpecialStyles};
+
+
   
