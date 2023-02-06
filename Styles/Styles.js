@@ -4,9 +4,9 @@ import { StyleSheet } from "react-native";
 export const lightStyles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'stretch',
-        justifyContent: 'space-evenly',
-        padding: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 40,
         backgroundColor: 'white'
           
     },
@@ -24,7 +24,7 @@ export const lightStyles = StyleSheet.create({
         fontSize: 18,
         fontWeight: "bold",
         padding: 10,
-        alignSelf: 'center',
+       
        
     },
     NumericInput: {
@@ -39,7 +39,6 @@ export const lightStyles = StyleSheet.create({
         color: '#2d2d2d',
         fontSize: 18,
         fontWeight: "bold",
-        alignSelf: 'center',
         padding: 10
     },
     header: {
@@ -53,7 +52,6 @@ export const lightStyles = StyleSheet.create({
   
     radiostyle: {
         padding: 5,
-        alignSelf: 'center',
         color: 'black'
         
     },
@@ -62,26 +60,34 @@ export const lightStyles = StyleSheet.create({
         backgroundColor: '#4aaac8',
         padding: 10,
         margin: 10,
-        alignSelf: 'center',
         width: 200,
         textAlign: 'center',
         fontSize: 18,
         borderRadius: 10,
         fontWeight: 'bold'
     },
-
+    green: {
+        color: 'green'
+    },
+    yellow: {
+        color: '#e6de0e'
+    },
+    red: {
+        color: 'red'
+    }
 });
 
 export const darkStyles = StyleSheet.create({
 
  container: {
         flex: 1,
-        alignItems: 'stretch',
-        justifyContent: 'space-evenly',
-        padding: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 40,
         backgroundColor: '#2099b4',
           
     },
+  
     
     textInput: {
         padding: 5,
@@ -97,16 +103,14 @@ export const darkStyles = StyleSheet.create({
         fontSize: 18,
         fontWeight: "bold",
         padding: 10,
-        alignSelf: 'center',
+       
         color: 'white'
        
     },
     NumericInput: {
         textAlign: 'center',
-        alignSelf: 'center',
         textColor: 'white',
         borderRadius: 10, 
-        itemSelf: 'center',
         color: 'white'
       
     },
@@ -115,7 +119,6 @@ export const darkStyles = StyleSheet.create({
         color: '#ffffff',
         fontSize: 18,
         fontWeight: "bold",
-        alignSelf: 'center',
         padding: 10
     },
     header: {
@@ -126,19 +129,12 @@ export const darkStyles = StyleSheet.create({
        color: 'white'
 
     },
-  
-    radiostyle: {
-        padding: 5,
-        alignSelf: 'center',
-        color: 'white'
-        
-    },
+      
     button: {
         color: 'black',
         backgroundColor: 'white',
         padding: 10,
         margin: 10,
-        alignSelf: 'center',
         width: 200,
         textAlign: 'center',
         fontSize: 18,
@@ -146,6 +142,23 @@ export const darkStyles = StyleSheet.create({
         fontWeight: 'bold'
     },
 
+    radiostyle: {
+        padding: 5,
+        color: 'black',
+        
+    },
+    switch: {
+        alignSelf: 'stretch'
+    },
+    green: {
+        color: 'green'
+    },
+    yellow: {
+        color: '#e6de0e'
+    },
+    red: {
+        color: 'red'
+    }
 });
 
 

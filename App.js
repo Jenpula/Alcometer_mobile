@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button, TextInput, ScrollView, StyleSheet, Text, View, Switch, TouchableOpacity} from 'react-native';
 import { useState } from 'react';
-import {lightStyles, darkStyles, Styles} from './Styles/Styles.js';
+import {lightStyles, darkStyles, Styles, radioButtonStyles} from './Styles/Styles.js';
 import NumericInput from 'react-native-numeric-input';
 import { RadioButton } from 'react-native-paper';
+
 
 
 export default function App() {
@@ -40,14 +41,15 @@ export default function App() {
     } else {
       setResult(alcohol);
     }
-
-  }
  
+  }
   return (
     <View style={color.container}>
       <Switch
         value={isOn}
         onValueChange= {newValue => setIsOn(newValue)}
+        thumbColor='white'
+        trackColor={{false:'#2099b4', true: 'white'}}
         />
      <ScrollView>
       <Text style={color.header}>Alcometer</Text>
@@ -82,13 +84,14 @@ export default function App() {
       </RadioButton.Group>
       <TouchableOpacity>
         <Text style={color.button} title='Calculate' onPress={calculate}>Calculate</Text>
-        <Text style={color.result}>{result.toFixed(2)}</Text>
+        <Text style={[color.result, (result <= 0.8) ? color.green : (result <= 1.5) ? color.yellow : color.red]}>{result.toFixed(2)}</Text>
+
       </TouchableOpacity>
       </ScrollView>
       </View>
    
   );
  
-}
 
+  }
 
