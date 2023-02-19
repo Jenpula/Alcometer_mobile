@@ -33,8 +33,9 @@ export default function App() {
     } else {
       alcohol = left / (weight * 0.6);
     }
-    if(weight === 0) {
-      alert("Set weight!");
+
+    if (!weight) {
+      return alert("Set weight!");
     }
     if(alcohol < 0 ) {
       setResult(0);
@@ -44,15 +45,17 @@ export default function App() {
  
   }
   return (
+    <ScrollView>
     <View style={color.container}>
       <Switch
+      style={color.switch}
         value={isOn}
         onValueChange= {newValue => setIsOn(newValue)}
         thumbColor='white'
         trackColor={{false:'#2099b4', true: 'white'}}
-        />
-     <ScrollView>
+       />
       <Text style={color.header}>Alcometer</Text>
+      
       <Text style={color.label}>Weight:</Text>
       <TextInput 
         keyboardType='number-pad' 
@@ -61,35 +64,38 @@ export default function App() {
         style={color.textInput}
       />
       <Text style={color.label}>Bottles</Text>
+      <View style={color.numericInput}>
         <NumericInput
         value={bottles} 
         minValue={0} 
         onChange={e => setBottles(e)}/>
+      </View>
 
       <Text style={color.label}>Hours</Text>
-        <NumericInput style={color.NumericInput}
+      <View style={color.numericInput}>
+        <NumericInput
         value={hours}
         minValue={0} 
         onChange={(e) => {setHours(e)}}/>
+      </View>
+        
 
       <RadioButton.Group value={gender} onValueChange={newValue => setGender(newValue)}>
       <View style={color.radiostyle}>
-        <RadioButton value='female'/>
-        <Text>Female</Text>
+        <RadioButton value='female' uncheckedColor={radioButtonStyles.uncheckedRadioButton.color} color={radioButtonStyles.radioButton.color} />
+        <Text style={color.gender}>Female</Text>
       </View>
       <View style={color.radiostyle}>
-        <RadioButton value='male'/>
-        <Text>Male</Text>
+        <RadioButton value='male' uncheckedColor={radioButtonStyles.uncheckedRadioButton.color} color={radioButtonStyles.radioButton.color}/>
+        <Text style={color.gender}>Male</Text>
       </View>
       </RadioButton.Group>
       <TouchableOpacity>
         <Text style={color.button} title='Calculate' onPress={calculate}>Calculate</Text>
         <Text style={[color.result, (result <= 0.8) ? color.green : (result <= 1.5) ? color.yellow : color.red]}>{result.toFixed(2)}</Text>
-
       </TouchableOpacity>
-      </ScrollView>
       </View>
-   
+      </ScrollView>
   );
  
 

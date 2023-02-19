@@ -14,10 +14,22 @@ export const lightStyles = StyleSheet.create({
     textInput: {
         padding: 5,
         borderWidth:1,
+        borderColor: '#bbb',
         marginBottom: 10,
         backgroundColor: 'white',
-        textAlign: 'center'
-       
+        textAlign: 'center',
+        width: 250
+    },
+
+    numericInput: {
+        textAlign: 'center',
+        backgroundColor: 'white',
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#bbb',
+        padding: 8,
+        marginVertical: 8,
+      
     },
 
     label: {
@@ -27,34 +39,29 @@ export const lightStyles = StyleSheet.create({
        
        
     },
-    NumericInput: {
-        textAlign: 'center',
-        alignSelf: 'center',
-        textColor: 'white',
-        borderRadius: 10
-      
-    },
    
     result:{
         color: '#2d2d2d',
         fontSize: 18,
         fontWeight: "bold",
-        padding: 10
+        padding: 10,
+        alignSelf: "center"
     },
+
     header: {
         fontSize: 35,
        padding: 40,
        margin: 20,
-       alignSelf: 'center',
-       color: '#4aaac8'
+       alignSelf: 'center'
 
     },
   
     radiostyle: {
         padding: 5,
-        color: 'black'
+        alignItems: 'center'
         
     },
+
     button: {
         color: 'white',
         backgroundColor: '#4aaac8',
@@ -66,12 +73,19 @@ export const lightStyles = StyleSheet.create({
         borderRadius: 10,
         fontWeight: 'bold'
     },
+
+    switch: {
+        alignSelf: 'stretch'
+    },
+
     green: {
         color: 'green'
     },
+
     yellow: {
         color: '#e6de0e'
     },
+
     red: {
         color: 'red'
     }
@@ -84,7 +98,7 @@ export const darkStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 40,
-        backgroundColor: '#2099b4',
+        backgroundColor: '#242525',
           
     },
   
@@ -95,32 +109,38 @@ export const darkStyles = StyleSheet.create({
         marginBottom: 10,
         backgroundColor: 'white',
         textAlign: 'center',
-        color: 'white'
+        color: 'white',
+        width: 250
        
     },
 
+    numericInput: {
+        textAlign: 'center',
+        backgroundColor: 'white',
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#bbb',
+        padding: 8,
+        marginVertical: 8,
+      
+    },
+   
     label: {
         fontSize: 18,
         fontWeight: "bold",
         padding: 10,
-       
         color: 'white'
        
-    },
-    NumericInput: {
-        textAlign: 'center',
-        textColor: 'white',
-        borderRadius: 10, 
-        color: 'white'
-      
     },
    
     result:{
         color: '#ffffff',
         fontSize: 18,
         fontWeight: "bold",
-        padding: 10
+        padding: 10,
+        alignSelf: 'center'
     },
+
     header: {
         fontSize: 35,
        padding: 40,
@@ -128,6 +148,11 @@ export const darkStyles = StyleSheet.create({
        alignSelf: 'center',
        color: 'white'
 
+    },
+
+    gender: {
+        color: 'white',
+        
     },
       
     button: {
@@ -144,22 +169,41 @@ export const darkStyles = StyleSheet.create({
 
     radiostyle: {
         padding: 5,
-        color: 'black',
-        
+        alignItems: 'center'
+      
     },
+
     switch: {
         alignSelf: 'stretch'
     },
+
     green: {
         color: 'green'
     },
+
     yellow: {
         color: '#e6de0e'
     },
+    
     red: {
         color: 'red'
     }
 });
+
+export const radioButtonStyles = StyleSheet.create({
+    radioButton: {
+      color: '#4aaac8',
+    },
+
+    uncheckedRadioButton: {
+      color: '#BDBDBD',
+    },
+  });
+  
+  
+  
+
+
 
 
   
