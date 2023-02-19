@@ -39,6 +39,7 @@ export default function App() {
 
     if (!weight) {
       // If weight is not set, display alert
+      setResult(0);
       return alert("Set weight!");
     }
 
@@ -115,8 +116,8 @@ export default function App() {
         {/* Calculations and result */}
         <TouchableOpacity onPress={calculate}>
           <Text style={color.button} title='Calculate'>Calculate</Text>
-          <Text style={[color.result, (result <= 0.8) ? color.green : (result <= 1.5) ? color.yellow : color.red]}>{result.toFixed(2)}</Text>
         </TouchableOpacity>
+        <Text style={[color.result, (result <= 0.8) ? color.green : (result <= 1.5) ? color.yellow : color.red]}>{result.toFixed(2)}</Text>
       </View>
     </ScrollView>
   );
