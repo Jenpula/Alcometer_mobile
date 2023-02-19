@@ -40,7 +40,7 @@ export const lightStyles = StyleSheet.create({
        
     },
    
-    result:{
+    result: {
         color: '#2d2d2d',
         fontSize: 18,
         fontWeight: "bold",
@@ -49,7 +49,7 @@ export const lightStyles = StyleSheet.create({
     },
 
     header: {
-        fontSize: 35,
+       fontSize: 35,
        padding: 40,
        margin: 20,
        alignSelf: 'center'
@@ -197,7 +197,7 @@ export const radioButtonStyles = StyleSheet.create({
 
     uncheckedRadioButton: {
       color: '#BDBDBD',
-    },
+    }
   });
   
   
