@@ -4,8 +4,13 @@ import { useState } from 'react';
 import {lightStyles, darkStyles, Styles, radioButtonStyles} from './Styles/Styles.js';
 import NumericInput from 'react-native-numeric-input';
 import { RadioButton } from 'react-native-paper';
+import { useFonts } from 'expo-font';
 
 export default function App() {
+  // Fonts
+  const [loaded] = useFonts({
+    LatoRegular: require('./assets/fonts/Lato-Regular.ttf'),
+  });
   // State variables
   const [hours,setHours] = useState(0);
   const [weight, setWeight] = useState(0);
@@ -43,6 +48,9 @@ export default function App() {
     } else {
       setResult(alcohol);
     }
+  }
+  if (!loaded) {
+    return null;
   }
  
   return (

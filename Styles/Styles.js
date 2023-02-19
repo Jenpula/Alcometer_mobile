@@ -7,8 +7,7 @@ export const lightStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 40,
-        backgroundColor: 'white'
-          
+        backgroundColor: 'white',    
     },
     
     textInput: {
@@ -34,7 +33,6 @@ export const lightStyles = StyleSheet.create({
         fontWeight: "bold",
         padding: 10,
        
-       
     },
    
     result: {
@@ -49,8 +47,8 @@ export const lightStyles = StyleSheet.create({
        padding: 40,
        margin: 20,
        alignSelf: 'center',
-       color: 'coral'
-
+       color: 'coral',
+       fontFamily: 'LatoRegular'
     },
   
     radiostyle: {
@@ -140,7 +138,8 @@ export const darkStyles = StyleSheet.create({
        padding: 40,
        margin: 20,
        alignSelf: 'center',
-       color: 'white'
+       color: 'white',
+       fontFamily: 'LatoRegular'
 
     },
 
@@ -158,7 +157,7 @@ export const darkStyles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 18,
         borderRadius: 10,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     },
 
     radiostyle: {
