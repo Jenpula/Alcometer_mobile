@@ -54,7 +54,7 @@ export default function App() {
           value={isOn}
           onValueChange={newValue => setIsOn(newValue)}
           thumbColor='white'
-          trackColor={{false:'#2099b4', true: 'white'}}
+          trackColor={{false:'coral', true: 'white'}}
         />
         {/* Header */}
         <Text style={color.header}>Alcometer</Text>
@@ -72,6 +72,8 @@ export default function App() {
         <Text style={color.label}>Bottles</Text>
         <View style={color.numericInput}>
           <NumericInput
+            type= 'up-down'
+            rounded
             value={bottles} 
             minValue={0} 
             onChange={e => setBottles(e)}
@@ -82,6 +84,8 @@ export default function App() {
         <Text style={color.label}>Hours</Text>
         <View style={color.numericInput}>
           <NumericInput
+            type= 'up-down'
+            rounded
             value={hours}
             minValue={0} 
             onChange={(e) => {setHours(e)}}

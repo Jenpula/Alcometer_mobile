@@ -18,18 +18,15 @@ export const lightStyles = StyleSheet.create({
         marginBottom: 10,
         backgroundColor: 'white',
         textAlign: 'center',
-        width: 250
+        width: 250,
+        fontSize: 15
     },
 
     numericInput: {
         textAlign: 'center',
         backgroundColor: 'white',
-        borderRadius: 8,
-        borderWidth: 1,
-        borderColor: '#bbb',
         padding: 8,
-        marginVertical: 8,
-      
+        marginVertical: 5,
     },
 
     label: {
@@ -41,7 +38,6 @@ export const lightStyles = StyleSheet.create({
     },
    
     result: {
-        color: '#2d2d2d',
         fontSize: 18,
         fontWeight: "bold",
         padding: 10,
@@ -52,7 +48,8 @@ export const lightStyles = StyleSheet.create({
        fontSize: 35,
        padding: 40,
        margin: 20,
-       alignSelf: 'center'
+       alignSelf: 'center',
+       color: 'coral'
 
     },
   
@@ -64,7 +61,7 @@ export const lightStyles = StyleSheet.create({
 
     button: {
         color: 'white',
-        backgroundColor: '#4aaac8',
+        backgroundColor: 'coral',
         padding: 10,
         margin: 10,
         width: 200,
@@ -83,7 +80,7 @@ export const lightStyles = StyleSheet.create({
     },
 
     yellow: {
-        color: '#e6de0e'
+        color: '#d7d118'
     },
 
     red: {
@@ -92,15 +89,14 @@ export const lightStyles = StyleSheet.create({
 });
 
 export const darkStyles = StyleSheet.create({
-
- container: {
+    container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
         padding: 40,
         backgroundColor: '#242525',
-          
-    },
+            
+   },
   
     
     textInput: {
@@ -109,20 +105,18 @@ export const darkStyles = StyleSheet.create({
         marginBottom: 10,
         backgroundColor: 'white',
         textAlign: 'center',
-        color: 'white',
-        width: 250
+        color: 'black',
+        width: 250,
+        fontSize: 15
        
     },
 
     numericInput: {
         textAlign: 'center',
         backgroundColor: 'white',
-        borderRadius: 8,
-        borderWidth: 1,
-        borderColor: '#bbb',
         padding: 8,
-        marginVertical: 8,
-      
+        marginVertical: 5,
+        borderRadius: 10,
     },
    
     label: {
@@ -142,7 +136,7 @@ export const darkStyles = StyleSheet.create({
     },
 
     header: {
-        fontSize: 35,
+       fontSize: 35,
        padding: 40,
        margin: 20,
        alignSelf: 'center',
@@ -182,7 +176,7 @@ export const darkStyles = StyleSheet.create({
     },
 
     yellow: {
-        color: '#e6de0e'
+        color: '#e9e22d'
     },
     
     red: {
@@ -192,7 +186,7 @@ export const darkStyles = StyleSheet.create({
 
 export const radioButtonStyles = StyleSheet.create({
     radioButton: {
-      color: '#4aaac8',
+      color: 'coral',
     },
 
     uncheckedRadioButton: {
