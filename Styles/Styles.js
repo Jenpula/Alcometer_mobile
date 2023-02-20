@@ -54,7 +54,6 @@ export const lightStyles = StyleSheet.create({
     radiostyle: {
         padding: 5,
         alignItems: 'center'
-        
     },
 
     button: {
@@ -92,11 +91,9 @@ export const darkStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 40,
-        backgroundColor: '#242525',
-            
+        backgroundColor: '#242525',         
    },
   
-    
     textInput: {
         padding: 5,
         borderWidth:1,
@@ -105,8 +102,7 @@ export const darkStyles = StyleSheet.create({
         textAlign: 'center',
         color: 'black',
         width: 250,
-        fontSize: 15
-       
+        fontSize: 15   
     },
 
     numericInput: {
